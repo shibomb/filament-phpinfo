@@ -1,21 +1,21 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "shibomb/filament-phpinfo",
+    "description": "Display phpInfo.",
     "keywords": [
-        ":vendor_name",
+        "shibomb",
         "laravel",
-        ":package_slug"
+        "filament-phpinfo"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/shibomb/filament-phpinfo",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/shibomb/filament-phpinfo/issues",
+        "source": "https://github.com/shibomb/filament-phpinfo"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "SHIBAHARA Hiroki",
+            "email": "shibomb@gmail.com",
             "role": "Developer"
         }
     ],
