@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Shibomb\FilamentPhpinfo\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentPhpinfoCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-phpinfo';
 
     public $description = 'My command';
 
