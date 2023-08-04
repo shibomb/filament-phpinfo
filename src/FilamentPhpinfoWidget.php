@@ -27,7 +27,7 @@ class FilamentPhpinfoWidget extends Widget
 
         // update class attribute
         $classes = [
-            'table' => 'table-fixed text-sm shadow-sm my-4',
+            'table' => 'table-fixed text-sm my-4',
             'th' => 'p-2',
             'td' => 'p-2',
             'h1' => 'text-3xl pt-4',
