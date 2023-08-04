@@ -2,6 +2,10 @@
 
 namespace Shibomb\FilamentPhpinfo;
 
-class FilamentPhpinfo
+use Filament\Widgets\Widget;
+
+class FilamentPhpinfo extends Widget
 {
+    protected static string $view = 'phpinfo::widget';
+
 }

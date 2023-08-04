@@ -5,8 +5,6 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/shibomb/filament-phpinfo/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/shibomb/filament-phpinfo/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/shibomb/filament-phpinfo.svg?style=flat-square)](https://packagist.org/packages/shibomb/filament-phpinfo)
 
-
-
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 ## Installation
@@ -46,8 +44,17 @@ return [
 ## Usage
 
 ```php
-$filamentPhpinfo = new Shibomb\FilamentPhpinfo();
-echo $filamentPhpinfo->echoPhrase('Hello, Shibomb!');
+Register the plugin and/or Widget in your Panel provider:
+
+use Shibomb\FilamentPhpinfo\Phpinfo;
+
+public function panel(Panel $panel): Panel
+{
+    return $panel
+        ->widgets([
+            Phpinfo::class,
+        ]);
+}
 ```
 
 ## Testing
@@ -70,8 +77,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [SHIBAHARA Hiroki](https://github.com/shibomb)
-- [All Contributors](../../contributors)
+-   [SHIBAHARA Hiroki](https://github.com/shibomb)
+-   [All Contributors](../../contributors)
 
 ## License
 

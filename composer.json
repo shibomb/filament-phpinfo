@@ -34,8 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Shibomb\\FilamentPhpinfo\\": "src/",
-            "Shibomb\\FilamentPhpinfo\\Database\\Factories\\": "database/factories/"
+            "Shibomb\\FilamentPhpinfo\\": "src/"
         }
     },
     "autoload-dev": {
@@ -59,10 +58,7 @@
         "laravel": {
             "providers": [
                 "Shibomb\\FilamentPhpinfo\\FilamentPhpinfoServiceProvider"
-            ],
-            "aliases": {
-                "FilamentPhpinfo": "Shibomb\\FilamentPhpinfo\\Facades\\FilamentPhpinfo"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
