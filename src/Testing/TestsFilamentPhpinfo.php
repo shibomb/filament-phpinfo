@@ -1,13 +1,13 @@
 <?php
 
-namespace Shibomb\FilamentPhpinfo\Testing;
+namespace Shibomb\FilamentPhpinfoWidget\Testing;
 
 use Livewire\Testing\TestableLivewire;
 
 /**
  * @mixin TestableLivewire
  */
-class TestsFilamentPhpinfo
+class TestsFilamentPhpinfoWidget
 {
     //
 }

@@ -1,5 +1,5 @@
 <?php
 
-use Shibomb\FilamentPhpinfo\Tests\TestCase;
+use Shibomb\FilamentPhpinfoWidget\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

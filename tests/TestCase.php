@@ -1,6 +1,6 @@
 <?php
 
-namespace Shibomb\FilamentPhpinfo\Tests;
+namespace Shibomb\FilamentPhpinfoWidget\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
@@ -18,7 +18,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
-use Shibomb\FilamentPhpinfo\FilamentPhpinfoServiceProvider;
+use Shibomb\FilamentPhpinfoWidget\FilamentPhpinfoServiceProvider;
 
 class TestCase extends Orchestra
 {

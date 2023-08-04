@@ -1,15 +1,15 @@
 {
-    "name": "shibomb/filament-phpinfo",
-    "description": "This is my package filament-phpinfo",
+    "name": "shibomb/filament-phpinfo-widget",
+    "description": "This is my package filament-phpinfo-widget",
     "keywords": [
         "shibomb",
         "laravel",
-        "filament-phpinfo"
+        "filament-phpinfo-widget"
     ],
-    "homepage": "https://github.com/shibomb/filament-phpinfo",
+    "homepage": "https://github.com/shibomb/filament-phpinfo-widget",
     "support": {
-        "issues": "https://github.com/shibomb/filament-phpinfo/issues",
-        "source": "https://github.com/shibomb/filament-phpinfo"
+        "issues": "https://github.com/shibomb/filament-phpinfo-widget/issues",
+        "source": "https://github.com/shibomb/filament-phpinfo-widget"
     },
     "license": "MIT",
     "authors": [
@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Shibomb\\FilamentPhpinfo\\": "src/"
+            "Shibomb\\FilamentPhpinfoWidget\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Shibomb\\FilamentPhpinfo\\Tests\\": "tests/"
+            "Shibomb\\FilamentPhpinfoWidget\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -57,7 +57,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Shibomb\\FilamentPhpinfo\\FilamentPhpinfoServiceProvider"
+                "Shibomb\\FilamentPhpinfoWidget\\FilamentPhpinfoWidgetServiceProvider"
             ]
         }
     },

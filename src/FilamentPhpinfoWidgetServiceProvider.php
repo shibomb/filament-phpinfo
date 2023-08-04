@@ -1,6 +1,6 @@
 <?php
 
-namespace Shibomb\FilamentPhpinfo;
+namespace Shibomb\FilamentPhpinfoWidget;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
@@ -8,11 +8,11 @@ use Filament\Support\Facades\FilamentAsset;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class FilamentPhpinfoServiceProvider extends PackageServiceProvider
+class FilamentPhpinfoWidgetServiceProvider extends PackageServiceProvider
 {
-    public static string $name = 'filament-phpinfo';
+    public static string $name = 'filament-phpinfo-widget';
 
-    public static string $viewNamespace = 'filament-phpinfo';
+    public static string $viewNamespace = 'filament-phpinfo-widget';
 
     public function configurePackage(Package $package): void
     {
@@ -43,7 +43,7 @@ class FilamentPhpinfoServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): ?string
     {
-        return 'shibomb/filament-phpinfo';
+        return 'shibomb/filament-phpinfo-widget';
     }
 
     /**
@@ -52,7 +52,7 @@ class FilamentPhpinfoServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            AlpineComponent::make('filament-phpinfo', __DIR__ . '/../resources/dist/filament-phpinfo.js'),
+            AlpineComponent::make('filament-phpinfo-widget', __DIR__ . '/../resources/dist/filament-phpinfo-widget.js'),
         ];
     }
 }
