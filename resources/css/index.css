@@ -1,5 +1,5 @@
 #filament-phpinfo-widget tr:not(:last-child) {
-    border-bottom: 0.5p #ccc solid;
+    border-bottom: 1px #ccc solid;
 }
 
 #filament-phpinfo-widget td.e,
