@@ -1,5 +1,9 @@
 /* @import '../../vendor/filament/filament/resources/css/theme.css'; */
 
+#filament-phpinfo-widget .break-all {
+    word-break: break-all;
+}
+
 /* div#filament-phpinfo-widget {
     background-color: #fff;
     color: #222;
