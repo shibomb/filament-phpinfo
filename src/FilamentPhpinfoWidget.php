@@ -31,13 +31,13 @@ class FilamentPhpinfoWidget extends Widget
             'th' => 'p-2',
             'td' => 'p-2',
             'h1' => 'text-3xl pt-4',
-            'h2' => 'text-2xl pt-4'
+            'h2' => 'text-2xl pt-4',
         ];
 
         foreach ($classes as $key => $value) {
             $elements = $dom->getElementsByTagName($key);
             foreach ($elements as $element) {
-                $element->setAttribute('class', trim($element->getAttribute('class') . ' ' . $value));
+                $element->setAttribute('class', trim($element->getAttribute('class').' '.$value));
             }
         }
 
@@ -46,7 +46,7 @@ class FilamentPhpinfoWidget extends Widget
         $data = $dom->saveXML($body[0]);
 
         return [
-            'data' => $data
+            'data' => $data,
         ];
     }
 }

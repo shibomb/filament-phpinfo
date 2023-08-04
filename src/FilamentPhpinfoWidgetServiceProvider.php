@@ -48,7 +48,7 @@ class FilamentPhpinfoWidgetServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            Css::make('filament-phpinfo-widget-styles', __DIR__ . '/../resources/dist/filament-phpinfo-widget.css'),
+            Css::make('filament-phpinfo-widget-styles', __DIR__.'/../resources/dist/filament-phpinfo-widget.css'),
         ];
     }
 }
