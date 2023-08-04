@@ -11,21 +11,21 @@ class FilamentPhpinfoWidget extends Widget
 
     protected function getViewData(): array
     {
+        // get phpinfo() output
         ob_start();
         phpinfo();
         $output = ob_get_contents();
         ob_clean();
-
         // Log::debug($output);
 
+        // create xml document object
         $dom = new DOMDocument();
         $invalid_characters = '&nbsp;';
         $output = str_replace($invalid_characters, ' ', $output);
         $dom->loadXML($output);
         $dom->formatOutput = true;
-        // $data = $dom->saveXML();
-        $body = $dom->getElementsByTagName('body');
 
+        // update class attribute
         $classes = [
             'table' => 'table-fixed border-collapse w-full border border-slate-400 dark:border-slate-500 text-sm shadow-sm',
             'th' => 'border border-slate-300 dark:border-slate-600 font-semibold p-2 text-left break-all w-1/3 max-w-1/3',
@@ -37,10 +37,12 @@ class FilamentPhpinfoWidget extends Widget
         foreach ($classes as $key => $value) {
             $tables = $dom->getElementsByTagName($key);
             foreach ($tables as $table) {
-                $table->setAttribute("class", $value);
+                $table->setAttribute("class", $table->getAttribute() . ' ' . $value);
             }
         }
 
+        // use under body tag
+        $body = $dom->getElementsByTagName('body');
         $data = $dom->saveXML($body[0]);
 
         return [
