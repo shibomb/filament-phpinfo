@@ -37,7 +37,7 @@ class FilamentPhpinfoWidget extends Widget
         foreach ($classes as $key => $value) {
             $tables = $dom->getElementsByTagName($key);
             foreach ($tables as $table) {
-                $table->setAttribute("class", $table->getAttribute() . ' ' . $value);
+                $table->setAttribute('class', $table->getAttribute('class') . ' ' . $value);
             }
         }
 
