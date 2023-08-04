@@ -1,3 +1,7 @@
+#filament-phpinfo-widget tr:not(:last-child) {
+    border-bottom: 0.5px grey solid;
+}
+
 #filament-phpinfo-widget td.e,
 #filament-phpinfo-widget td.v,
 #filament-phpinfo-widget tr.h th {
@@ -5,9 +9,9 @@
 }
 
 #filament-phpinfo-widget td.e {
-    font-weight: 600;
     width: calc(25%);
     max-width: calc(25%);
+    font-weight: 600;
 }
 
 #filament-phpinfo-widget td.v {
@@ -15,7 +19,7 @@
 }
 
 #filament-phpinfo-widget tr.h th {
-    font-weight: 600;
     width: calc(100% / 3);
     max-width: calc(100% / 3);
+    font-weight: 600;
 }
