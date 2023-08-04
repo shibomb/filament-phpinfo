@@ -1,6 +1,6 @@
 /* @import '../../vendor/filament/filament/resources/css/theme.css'; */
 
-body {
+table {
     background-color: #fff;
     color: #222;
     font-family: sans-serif;
@@ -121,7 +121,7 @@ hr {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
+    table {
         background: var(--php-dark-grey);
         color: var(--php-light-blue);
     }
