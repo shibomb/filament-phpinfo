@@ -2,8 +2,8 @@
 
 namespace Shibomb\FilamentPhpinfoWidget;
 
+use DateTime;
 use Filament\Widgets\Widget;
-use Illuminate\Support\Facades\Date;
 
 class FilamentPhpinfoWidget extends Widget
 {
@@ -11,7 +11,7 @@ class FilamentPhpinfoWidget extends Widget
 
     protected function getViewData(): array
     {
-        $date = new Date();
+        $date = new DateTime();
         return [
             'date' => $date
         ];
