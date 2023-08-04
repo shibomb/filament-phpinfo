@@ -11,9 +11,14 @@ class FilamentPhpinfoWidget extends Widget
 
     protected function getViewData(): array
     {
+        ob_start();
+        phpinfo();
+        $data = ob_get_contents();
+        ob_clean();
+
         $date = new DateTime();
         return [
-            'date' => $date
+            'data' => $data
         ];
     }
 }
