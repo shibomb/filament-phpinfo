@@ -5,7 +5,6 @@ namespace Shibomb\FilamentPhpinfoWidget;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
-use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -24,10 +23,6 @@ class FilamentPhpinfoWidgetServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package->name(static::$name);
-
-        if (file_exists($package->basePath('/../resources/lang'))) {
-            $package->hasTranslations();
-        }
 
         if (file_exists($package->basePath('/../resources/views'))) {
             $package->hasViews(static::$viewNamespace);
@@ -54,7 +49,7 @@ class FilamentPhpinfoWidgetServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            AlpineComponent::make('filament-phpinfo-widget', __DIR__ . '/../resources/dist/filament-phpinfo-widget.js'),
+            // AlpineComponent::make('filament-phpinfo-widget', __DIR__ . '/../resources/dist/filament-phpinfo-widget.js'),
             Css::make('filament-phpinfo-widget-styles', __DIR__ . '/../resources/dist/filament-phpinfo-widget.css'),
             // Js::make('filament-phpinfo-widget-scripts', __DIR__ . '/../resources/dist/filament-phpinfo-widget.js'),
         ];
