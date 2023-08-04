@@ -1,18 +1,6 @@
-@import '../../vendor/filament/filament/resources/css/theme.css';
+/* @import '../../vendor/filament/filament/resources/css/theme.css'; */
 
-table {
-    table-layout: auto;
-    width: 100%;
-}
-
-th,
-td {
-    word-break: break-all;
-    width: calc(100% / 3);
-    max-width: calc(100% / 3);
-}
-
-/* body {
+body {
     background-color: #fff;
     color: #222;
     font-family: sans-serif;
@@ -34,9 +22,10 @@ a:hover {
 }
 
 table {
+    table-layout: auto;
+    width: 100%;
     border-collapse: collapse;
     border: 0;
-    width: 934px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -59,6 +48,10 @@ th {
     font-size: 75%;
     vertical-align: baseline;
     padding: 4px 5px;
+
+    word-break: break-all;
+    width: calc(100% / 3);
+    max-width: calc(100% / 3);
 }
 
 th {
@@ -158,4 +151,4 @@ hr {
     hr {
         background-color: #505153;
     }
-} */
+}
