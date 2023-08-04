@@ -8,6 +8,9 @@
             <p>{{ __('filament-phpinfo-widget::filament-phpinfo-widget.description') }}</p>
             <p class="text-xl" x-text="time"></p>
             <p>{{$date->format('Y-m-d')}}</p>
+            <p>@php
+                phpinfo();
+                @endphp</p>
             </div>
     </x-filament::section>
 </x-filament-widgets::widget>
