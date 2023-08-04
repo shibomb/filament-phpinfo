@@ -1,6 +1,17 @@
-@import '../../vendor/filament/filament/resources/css/theme.css';
+/* @import '../../vendor/filament/filament/resources/css/theme.css'; */
 
-body {
+table {
+    table-layout: auto;
+    width: 100%;
+}
+
+th,
+td {
+    word-break: break-all;
+    max-width: calc(100% / 3);
+}
+
+/* body {
     background-color: #fff;
     color: #222;
     font-family: sans-serif;
@@ -146,4 +157,4 @@ hr {
     hr {
         background-color: #505153;
     }
-}
+} */
