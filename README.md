@@ -17,11 +17,9 @@ composer require shibomb/filament-phpinfo-widget
 
 ## Usage
 
-```php
 Register the Widget in your Panel provider:
 
-use Shibomb\FilamentPhpinfoWidget\Phpinfo;
-
+```php
 public function panel(Panel $panel): Panel
 {
     return $panel
