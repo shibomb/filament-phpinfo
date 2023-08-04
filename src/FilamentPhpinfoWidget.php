@@ -28,8 +28,8 @@ class FilamentPhpinfoWidget extends Widget
         // update class attribute
         $classes = [
             'table' => 'table-fixed border-collapse w-full border border-slate-400 dark:border-slate-500 text-sm shadow-sm',
-            'th' => 'border border-slate-300 dark:border-slate-600 font-semibold p-2 text-left break-all w-1/3 max-w-1/3',
-            'td' => 'border border-slate-300 dark:border-slate-700 p-2 break-all w-1/3 max-w-1/3',
+            'th' => 'border border-slate-300 dark:border-slate-600 font-semibold p-2 text-left',
+            'td' => 'border border-slate-300 dark:border-slate-700 p-2',
             'h1' => 'text-3xl pt-4',
             'h2' => 'text-2xl pt-4'
         ];
