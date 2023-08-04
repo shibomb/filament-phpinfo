@@ -5,6 +5,7 @@
 }
 
 #filament-phpinfo-widget td.e {
+    font-weight: 600;
     width: calc(25%);
     max-width: calc(25%);
 }
