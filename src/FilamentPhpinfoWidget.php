@@ -25,6 +25,11 @@ class FilamentPhpinfoWidget extends Widget
         $dom->formatOutput = true;
         // $data = $dom->saveXML();
         $body = $dom->getElementsByTagName('body');
+        $tables = $dom->getElementsByTagName('table');
+        foreach ($tables as $table) {
+            $table->setAttribute("class", "fi-ta-table w-full table-auto divide-y divide-gray-200 text-start dark:divide-white/5");
+        }
+
         $data = $dom->saveXML($body[0]);
 
         return [
