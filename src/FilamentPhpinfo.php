@@ -6,6 +6,5 @@ use Filament\Widgets\Widget;
 
 class FilamentPhpinfo extends Widget
 {
-    protected static string $view = 'phpinfo::widget';
-
+    protected static string $view = 'filament-phpinfo::widget';
 }
