@@ -1,6 +1,6 @@
 /* @import '../../vendor/filament/filament/resources/css/theme.css'; */
 
-table {
+div#filament-phpinfo-widget {
     background-color: #fff;
     color: #222;
     font-family: sans-serif;
@@ -60,12 +60,14 @@ th {
     background: inherit;
 }
 
-h1 {
-    font-size: 150%;
+#filament-phpinfo-widget h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
 }
 
-h2 {
-    font-size: 125%;
+#filament-phpinfo-widget h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 h2 a:link,
@@ -80,7 +82,6 @@ h2 a:visited {
 
 .e {
     background-color: #ccf;
-    width: 300px;
     font-weight: bold;
 }
 
@@ -91,7 +92,6 @@ h2 a:visited {
 
 .v {
     background-color: #ddd;
-    max-width: 300px;
     overflow-x: auto;
     word-wrap: break-word;
 }
@@ -106,7 +106,7 @@ img {
 }
 
 hr {
-    width: 934px;
+    width: 100%;
     background-color: #ccc;
     border: 0;
     height: 1px;
@@ -121,7 +121,7 @@ hr {
 }
 
 @media (prefers-color-scheme: dark) {
-    table {
+    div#filament-phpinfo-widget {
         background: var(--php-dark-grey);
         color: var(--php-light-blue);
     }
