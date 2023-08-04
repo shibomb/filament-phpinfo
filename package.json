@@ -2,8 +2,13 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "node bin/build.js --dev",
-        "build": "node bin/build.js"
+        "dev:styles": "npx tailwindcss -i resources/css/index.css -o resources/dist/filament-phpinfo-widget.css --postcss --watch",
+        "dev:scripts": "node bin/build.js --dev",
+        "build:styles": "npx tailwindcss -i resources/css/index.css -o resources/dist/filament-phpinfo-widget.css --postcss --minify && npm run purge",
+        "build:scripts": "node bin/build.js",
+        "purge": "filament-purge -i resources/dist/filament-phpinfo-widget.css -o resources/dist/filament-phpinfo-widget.css -v 3.x",
+        "dev": "npm-run-all --parallel dev:*",
+        "build": "npm-run-all build:*"
     },
     "devDependencies": {
         "esbuild": "^0.17.19"

@@ -4,6 +4,8 @@ namespace Shibomb\FilamentPhpinfoWidget;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
+use Filament\Support\Assets\Css;
+use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -53,6 +55,8 @@ class FilamentPhpinfoWidgetServiceProvider extends PackageServiceProvider
     {
         return [
             AlpineComponent::make('filament-phpinfo-widget', __DIR__ . '/../resources/dist/filament-phpinfo-widget.js'),
+            Css::make('filament-phpinfo-widget-styles', __DIR__ . '/../resources/dist/filament-phpinfo-widget.css'),
+            Js::make('filament-phpinfo-widget-scripts', __DIR__ . '/../resources/dist/filament-phpinfo-widget.js'),
         ];
     }
 }

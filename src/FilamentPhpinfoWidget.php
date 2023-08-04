@@ -2,7 +2,7 @@
 
 namespace Shibomb\FilamentPhpinfoWidget;
 
-use DateTime;
+use DOMDocument;
 use Filament\Widgets\Widget;
 
 class FilamentPhpinfoWidget extends Widget
@@ -16,7 +16,16 @@ class FilamentPhpinfoWidget extends Widget
         $output = ob_get_contents();
         ob_clean();
 
-        $data = simplexml_load_string($output);
+        // Log::debug($output);
+
+        $dom = new DOMDocument();
+        $invalid_characters = '&nbsp;';
+        $output = str_replace($invalid_characters, ' ', $output);
+        $dom->loadXML($output);
+        $dom->formatOutput = true;
+        // $data = $dom->saveXML();
+        $body = $dom->getElementsByTagName('body');
+        $data = $dom->saveXML($body[0]);
 
         return [
             'data' => $data
