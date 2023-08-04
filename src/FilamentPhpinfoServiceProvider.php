@@ -52,7 +52,7 @@ class FilamentPhpinfoServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            AlpineComponent::make('filament-phpinfo', __DIR__ . '/../resources/dist/components/filament-phpinfo.js'),
+            AlpineComponent::make('filament-phpinfo', __DIR__ . '/../resources/dist/filament-phpinfo.js'),
         ];
     }
 }
