@@ -56,7 +56,7 @@ class FilamentPhpinfoWidgetServiceProvider extends PackageServiceProvider
         return [
             AlpineComponent::make('filament-phpinfo-widget', __DIR__ . '/../resources/dist/filament-phpinfo-widget.js'),
             Css::make('filament-phpinfo-widget-styles', __DIR__ . '/../resources/dist/filament-phpinfo-widget.css'),
-            Js::make('filament-phpinfo-widget-scripts', __DIR__ . '/../resources/dist/filament-phpinfo-widget.js'),
+            // Js::make('filament-phpinfo-widget-scripts', __DIR__ . '/../resources/dist/filament-phpinfo-widget.js'),
         ];
     }
 }
