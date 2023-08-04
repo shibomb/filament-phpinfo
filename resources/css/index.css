@@ -10,8 +10,7 @@
 }
 
 #filament-phpinfo-widget td.v {
-    width: calc(75%);
-    max-width: calc(75%);
+    width: auto;
 }
 
 #filament-phpinfo-widget tr.h th {

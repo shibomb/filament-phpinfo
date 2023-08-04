@@ -28,7 +28,7 @@ class FilamentPhpinfoWidget extends Widget
         // update class attribute
         $classes = [
             'table' => 'table-fixed border-collapse w-full border border-slate-400 dark:border-slate-500 text-sm shadow-sm',
-            'th' => 'border border-slate-300 dark:border-slate-600 font-semibold p-2 text-left',
+            'th' => 'border border-slate-300 dark:border-slate-600 p-2',
             'td' => 'border border-slate-300 dark:border-slate-700 p-2',
             'h1' => 'text-3xl pt-4',
             'h2' => 'text-2xl pt-4'
@@ -37,7 +37,7 @@ class FilamentPhpinfoWidget extends Widget
         foreach ($classes as $key => $value) {
             $tables = $dom->getElementsByTagName($key);
             foreach ($tables as $table) {
-                $table->setAttribute('class', $table->getAttribute('class') . ' ' . $value);
+                $table->setAttribute('class', trim($table->getAttribute('class') . ' ' . $value));
             }
         }
 
