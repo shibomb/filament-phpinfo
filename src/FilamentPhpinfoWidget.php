@@ -13,10 +13,11 @@ class FilamentPhpinfoWidget extends Widget
     {
         ob_start();
         phpinfo();
-        $data = ob_get_contents();
+        $output = ob_get_contents();
         ob_clean();
 
-        $date = new DateTime();
+        $data = simplexml_load_string($output);
+
         return [
             'data' => $data
         ];
