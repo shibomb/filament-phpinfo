@@ -27,9 +27,9 @@ class FilamentPhpinfoWidget extends Widget
         $body = $dom->getElementsByTagName('body');
 
         $classes = [
-            'table' => "border-collapse w-full border border-slate-400 dark:border-slate-500 bg-white dark:bg-slate-800 text-sm shadow-sm",
-            'th' => "w-1/3 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left",
-            'td' => "w-1/3 border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+            'table' => "border-collapse w-full border border-slate-400 dark:border-slate-500 text-sm shadow-sm",
+            'th' => "w-1/3 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-left",
+            'td' => "w-1/3 border border-slate-300 dark:border-slate-700 p-4"
         ];
 
         foreach ($classes as $key => $value) {
